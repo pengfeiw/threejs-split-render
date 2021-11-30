@@ -1,0 +1,19 @@
+{
+    "name": "typescript-rollup",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "build": "rimraf dist && tsc && rollup -c rollup.config.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@open-wc/building-rollup": "^2.0.1",
+        "deepmerge": "^4.2.2",
+        "rimraf": "^3.0.2",
+        "rollup": "^2.60.2",
+        "typescript": "^4.5.2"
+    }
+}
