@@ -5,3 +5,4 @@ const y = 10;
 
 console.log(`${x} + ${y} = ${add(x, y)}`)
 console.log(`${x} - ${y} = ${substract(x, y)}`);
+console.log("Hello world");

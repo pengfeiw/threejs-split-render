@@ -4,6 +4,8 @@
     "description": "",
     "main": "index.js",
     "scripts": {
+        "tsc:watch": "tsc --watch",
+        "start": "concurrently --kill-others --names tsc,web-dev-server \"npm run tsc:watch\" \"web-dev-server --config web-dev-server.config.js\"",
         "build": "rimraf dist && tsc && rollup -c rollup.config.js"
     },
     "keywords": [],
@@ -11,6 +13,8 @@
     "license": "ISC",
     "devDependencies": {
         "@open-wc/building-rollup": "^2.0.1",
+        "@web/dev-server": "^0.1.28",
+        "concurrently": "^6.4.0",
         "deepmerge": "^4.2.2",
         "rimraf": "^3.0.2",
         "rollup": "^2.60.2",
