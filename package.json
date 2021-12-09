@@ -1,7 +1,7 @@
 {
-    "name": "typescript-rollup",
+    "name": "threejs-split-render",
     "version": "1.0.0",
-    "description": "",
+    "description": "使用 threejs 进行分屏渲染",
     "main": "index.js",
     "scripts": {
         "tsc:watch": "tsc --watch",
@@ -9,15 +9,19 @@
         "build": "rimraf dist && tsc && rollup -c rollup.config.js"
     },
     "keywords": [],
-    "author": "",
+    "author": "Wang Pengfei <pengfeixc@sina.com> (https://pengfeixc.com)",
     "license": "ISC",
     "devDependencies": {
         "@open-wc/building-rollup": "^2.0.1",
+        "@types/three": "^0.135.0",
         "@web/dev-server": "^0.1.28",
         "concurrently": "^6.4.0",
         "deepmerge": "^4.2.2",
         "rimraf": "^3.0.2",
         "rollup": "^2.60.2",
         "typescript": "^4.5.2"
+    },
+    "dependencies": {
+        "three": "^0.135.0"
     }
 }
