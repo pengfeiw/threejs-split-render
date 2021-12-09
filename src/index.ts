@@ -76,7 +76,7 @@ const renderScene = () => {
 
     // view1
     scene.background = new THREE.Color("black");
-    
+
     renderer.setViewport(0, 0, halfW, container.clientHeight);
     renderer.setScissor(0, 0, halfW, container.clientHeight);
 
